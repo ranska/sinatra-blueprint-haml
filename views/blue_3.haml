@@ -1,0 +1,130 @@
+!!! Strict
+%html{:lang => "en"}
+  %head
+    %meta{:content => "text/html; charset=utf-8", "http-equiv" => "Content-Type"}
+      %title Test du Framework CSS BluePrint
+      / Framework CSS
+      %link{:href => "screen.css", :media => "screen, projection", :rel => "stylesheet", :type => "text/css"}
+        %link{:href => "perso3.css", :media => "screen, projection", :rel => "stylesheet", :type => "text/css"}
+          /[if IE] <link rel="stylesheet" href="../../blueprint/ie.css" type="text/css" media="screen, projection">
+  %body
+    .span-24.accessibar
+      %ul
+        %li
+          %a{:href => "#content", :title => "Aller directement au contenu"} Aller au contenu
+        %li
+          %a{:href => "#content", :title => "Aller directement au menu"} Aller au menu
+        %li
+          %a{:href => "#content", :title => "Afficher le plan du site"} Plan du site
+    .span-24.topbar
+      .span-16.titlebar
+        %h1 Titre de la page
+        %h2 Slogan de la page
+      .span-7.last.quicklinks
+        %form
+          %input{:name => "value_to_search", :type => "text"}
+            %input{:name => "submit_search", :type => "submit", :value => "Ok"}
+              %ul
+                %li
+                  %a{:href => "#", :title => ""} RSS
+                %li
+                  %a{:href => "#", :title => ""} RSS for comments
+    .span-10.prepend-3.main-menu
+      %ul
+        %li
+          %a{:href => "#", :title => "Welcome"} Home
+        %li
+          %a{:href => "#", :title => "Category 1"} Category 1
+        %li
+          %a{:href => "#", :title => "Category 2"} Category 2
+        %li
+          %a{:href => "#", :title => "Category 3"} Category 3
+    .span-14.content.colborder
+      %h3 Post title
+      %p
+        Lorem ipsum dolor sit amet,
+        = succeed "." do
+          %em consectetuer adipiscing elit
+        Nunc congue ipsum vestibulum libero. Aenean vitae justo. Nam eget tellus. Etiam convallis, est eu lobortis mattis, lectus tellus tempus felis, a ultricies erat ipsum at metus.
+      %p
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+        = succeed "." do
+          %a{:href => "#"} Morbi et risus
+        Aliquam nisl. Nulla facilisi. Cras accumsan vestibulum ante. Vestibulum sed tortor. Praesent
+        %span.caps SMALL CAPS
+        tempus fringilla elit. Ut elit diam, sagittis in, nonummy in, gravida non, nunc. Ut orci. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos. Nam egestas, orci eu imperdiet malesuada, nisl purus fringilla odio, quis commodo est orci vitae justo. Aliquam placerat odio tincidunt nulla. Cras in libero. Aenean rutrum, magna non tristique posuere, erat odio eleifend nisl, non convallis est tortor blandit ligula. Nulla id augue.
+      %p
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+        = succeed "." do
+          %a{:href => "#"} Morbi et risus
+        Aliquam nisl. Nulla facilisi. Cras accumsan vestibulum ante. Vestibulum sed tortor. Praesent
+        %span.caps SMALL CAPS
+        tempus fringilla elit. Ut elit diam, sagittis in, nonummy in, gravida non, nunc. Ut orci. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos. Nam egestas, orci eu imperdiet malesuada, nisl purus fringilla odio, quis commodo est orci vitae justo. Aliquam placerat odio tincidunt nulla. Cras in libero. Aenean rutrum, magna non tristique posuere, erat odio eleifend nisl, non convallis est tortor blandit ligula. Nulla id augue.
+    .span-4.colborder.sidebar-1
+      %h4 Informations
+      %ul
+        %li
+          %strong Category:
+          %a{:href => "#"} xxxxxx
+        %li
+          %strong Tags:
+          %a{:href => "#"} xxxxxx
+        %li
+          %strong Author:
+          %a{:href => "#"} xxxxxx
+        %li
+          %strong Date:
+          %a{:href => "#"} dd-mmm-yyyy
+      %h4 Actions
+      %ul
+        %li Share It
+        %li Print
+        %li Follow comments
+    .span-4.last.sidebar-2
+      %h4 Tags
+      %ul.tags
+        %li
+          %a{:href => "#", :title => "Link1"} Tag1
+        %li
+          %a{:href => "#", :title => "Link1"} Tag2
+        %li
+          %a{:href => "#", :title => "Link1"} Tag3
+        %li
+          %a{:href => "#", :title => "Link1"} Tag4
+        %li
+          %a{:href => "#", :title => "Link1"} Tag5
+      %h4 Blogroll
+      %ul
+        %li
+          %a{:href => "#", :title => "Link1"} Link 1
+        %li
+          %a{:href => "#", :title => "Link1"} Link 2
+        %li
+          %a{:href => "#", :title => "Link1"} Link 3
+        %li
+          %a{:href => "#", :title => "Link1"} Link 4
+        %li
+          %a{:href => "#", :title => "Link1"} Link 5
+        %li
+          %a{:href => "#", :title => "Link1"} Other
+      %h4 Archives
+      %ul
+        %li
+          %a{:href => "#", :title => "Apr 2008"} Apr 2008
+        %li
+          %a{:href => "#", :title => "Mar 2008"} Mar 2008
+        %li
+          %a{:href => "#", :title => "Feb 2008"} Feb 2008
+        %li
+          %a{:href => "#", :title => "Jan 2008"} Jan 2008
+        %li
+          %a{:href => "#", :title => "2007"} 2007
+    %br.clear/
+    .span-24.footer
+      Footer line1
+      %br/
+      Footer line2
+      %br/
+      Footer line3
+      
+

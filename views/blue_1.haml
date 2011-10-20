@@ -1,0 +1,133 @@
+!!! Strict
+%html{:lang => "en"}
+  %head
+    %meta{:content => "text/html; charset=utf-8", "http-equiv" => "Content-Type"}
+      %title Test du Framework CSS BluePrint
+      / Framework CSS
+      %link{:href => "screen.css", :media => "screen, projection", :rel => "stylesheet", :type => "text/css"}
+        %link{:href => "perso1.css", :media => "screen, projection", :rel => "stylesheet", :type => "text/css"}
+          /[if IE] <link rel="stylesheet" href="../../blueprint/ie.css" type="text/css" media="screen, projection">
+  %body
+    .container
+      .span-24.accessibar
+        %ul
+          %li
+            %a{:href => "#content", :title => "Aller directement au contenu"} Aller au contenu
+          %li
+            %a{:href => "#content", :title => "Aller directement au menu"} Aller au menu
+          %li
+            %a{:href => "#content", :title => "Afficher le plan du site"} Plan du site
+      .span-24.topbar
+        .span-16.titlebar
+          %h1 Titre de la page
+          %h2 Slogan de la page
+        .span-7.last.quicklinks
+          %form
+            %input{:name => "value_to_search", :type => "text"}
+              %input{:name => "submit_search", :type => "submit", :value => "Ok"}
+                %ul
+                  %li
+                    %a{:href => "#", :title => ""} RSS
+                  %li
+                    %a{:href => "#", :title => ""} RSS for comments
+      .span-11.categories.colborder
+        .box.category-1
+          %h3 Category 1
+          %p Description
+        .box.category-2
+          %h3 Category 2
+          %p Description
+        .box.category-3
+          %h3 Category 3
+          %p Description
+      .span-12.last
+        %h3 Edito
+        %p
+          Lorem ipsum dolor sit amet,
+          = succeed "." do
+            %em consectetuer adipiscing elit
+          Nunc congue ipsum vestibulum libero. Aenean vitae justo. Nam eget tellus. Etiam convallis, est eu lobortis mattis, lectus tellus tempus felis, a ultricies erat ipsum at metus.
+        %p
+          Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+          = succeed "." do
+            %a{:href => "#"} Morbi et risus
+          Aliquam nisl. Nulla facilisi. Cras accumsan vestibulum ante. Vestibulum sed tortor. Praesent
+          %span.caps SMALL CAPS
+          tempus fringilla elit. Ut elit diam, sagittis in, nonummy in, gravida non, nunc. Ut orci. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos. Nam egestas, orci eu imperdiet malesuada, nisl purus fringilla odio, quis commodo est orci vitae justo. Aliquam placerat odio tincidunt nulla. Cras in libero. Aenean rutrum, magna non tristique posuere, erat odio eleifend nisl, non convallis est tortor blandit ligula. Nulla id augue.
+      %hr.clear/
+      .span-7.border.last-posts.colborder
+        %h3 Last Posts
+        %dl
+          %dt
+            %dfn Post 1
+            Quick description
+          %dd Excerpt
+          %dt
+            %dfn Post 2
+            Quick description
+          %dd Excerpt
+          %dt
+            %dfn Post 3
+            Quick description
+          %dd Excerpt
+          %dt
+            %dfn Post 4
+            Quick description
+          %dd Excerpt
+          %dt
+            %dfn Post 5
+            Quick description
+          %dd Excerpt
+          %dt
+            %dfn Post 6
+            Quick description
+          %dd Excerpt
+      .span-8.border.last-comments.colborder
+        %h3 Last comments
+        %dl
+          %dt
+            %dfn Comment 1
+            Quick description
+          %dd Comment
+          %dt
+            %dfn Comment 2
+            Quick description
+          %dd Comment
+          %dt
+            %dfn Comment 3
+            Quick description
+          %dd Comment
+          %dt
+            %dfn Comment 4
+            Quick description
+          %dd Comment
+          %dt
+            %dfn Comment 5
+            Quick description
+          %dd Comment
+          %dt
+            %dfn Comment 6
+            Quick description
+          %dd Comment
+      .span-7.last.blogroll
+        %h3 Blogoliste
+        %ul
+          %li
+            %a{:href => "#", :rel => "nofollow", :title => ""} Link 1
+          %li
+            %a{:href => "#", :rel => "nofollow", :title => ""} Link 2
+          %li
+            %a{:href => "#", :rel => "nofollow", :title => ""} Link 3
+          %li
+            %a{:href => "#", :rel => "nofollow", :title => ""} Link 4
+          %li
+            %a{:href => "#", :rel => "nofollow", :title => ""} Link 5
+          %li
+            %a{:href => "#", :rel => "nofollow", :title => ""} Link 6
+      %br.clear/
+      .span-24.footer
+        Footer line1
+        %br/
+        Footer line2
+        %br/
+        Footer line3

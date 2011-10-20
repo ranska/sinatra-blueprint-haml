@@ -1,0 +1,12 @@
+!!! Strict
+%html{:lang => "en"}
+  %head
+    %meta{:content => "text/html; charset=utf-8", "http-equiv" => "Content-Type"}
+      %title Test du Framework CSS BluePrint
+      / Framework CSS
+      %link{:href => "screen.css", :media => "screen, projection", :rel => "stylesheet", :type => "text/css"}
+        %link{:href => "perso2.css", :media => "screen, projection", :rel => "stylesheet", :type => "text/css"}
+          /[if IE] <link rel="stylesheet" href="../../blueprint/ie.css" type="text/css" media="screen, projection">
+  %body
+    .container
+      = yield

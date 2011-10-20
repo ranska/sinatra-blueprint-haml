@@ -1,0 +1,15 @@
+/ In your /views directory -- it has to be called "layout".
+!!!
+%html
+  %head
+    %title Weather Station
+  %body
+    %h1 Following is the main template:
+    / In the "views/" subdirectory again
+    %h2 Conditions
+    %p== It appears to be quite #{@weather}!
+
+    %h2 Temperature
+    %p= @temperature
+
+

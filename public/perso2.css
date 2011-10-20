@@ -1,0 +1,79 @@
+body {
+	background-color: #EFEFDF;
+}
+		
+.container {
+	background-color: white;
+}
+
+.accessibar, .footer {
+	background-color: #666;
+}
+
+.accessibar ul {
+	list-style-type:none;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	padding: 0;
+}
+
+.accessibar li {
+	display: inline;
+	margin-left: 20px;
+}
+
+.accessibar li a, .accessibar li a:visited {
+	color: white;
+}
+
+.accessibar li a:hover {
+	text-decoration: none;
+}
+
+.topbar {
+	margin-bottom: 20px;
+	border-bottom: 2px solid black;
+}
+
+.quicklinks ul {
+	list-style-type:none;
+}
+
+.quicklinks li {
+	display: inline;
+	margin-left: 20px;
+}
+
+.quicklinks li a, .quicklinks li a:visited {
+	color: black;
+}
+
+.quicklinks li a:hover {
+	text-decoration: none;
+}
+
+.category-1 h3 {
+	line-height: 3em;
+	background-color: #178AFF;
+	text-align: center;
+}
+
+.category-2 h3 {
+	line-height: 3em;
+	background-color: orange;
+	text-align: center;
+}
+
+.category-3 h3 {
+	line-height: 3em;
+	background-color: #30CA99;
+	text-align: center;
+}
+
+dfn {
+	display: block;
+}
+
+dd {
+	margin-bottom: 1em	;
+}
