@@ -1,14 +1,11 @@
 .span-24.accessibar
   %ul
     %li
-      %a{:href => "#content", :title => "Aller directement au contenu"} 
-        Aller au contenu
+      %a Aller au contenu
     %li
-      %a{:href => "#content", :title => "Aller directement au menu"} 
-        Aller au menu
+      %a Aller au menu
     %li
-      %a{:href => "#content", :title => "Afficher le plan du site"} 
-        Plan du site
+      %a Plan du site
 .span-24.topbar
   .span-16.titlebar
     %h1 Titre de la page
@@ -19,44 +16,24 @@
         %input{:name => "submit_search", :type => "submit", :value => "Ok"}
           %ul
             %li
-              %a{:href => "#", :title => ""} RSS
+              %a RSS
             %li
-              %a{:href => "#", :title => ""} RSS for comments
+              %a RSS for comments
 .span-11.colborder
   %h3 Edito
-  %p
-    Lorem ipsum dolor sit amet,
-    = succeed "." do
-      %em= @lorem_m
-  %p
-    Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-    = succeed "." do
-      %a{:href => "#"} Morbi et risus
-    Aliquam nisl. Nulla facilisi. Cras accumsan vestibulum ante. 
-    Vestibulum sed tortor. Praesent
-    %span.caps SMALL CAPS #{@lorem*2}
+  = partial :big_text_2p
 .span-12.last
-  %p
-    Lorem ipsum dolor sit amet,
-    = succeed "." do
-      %em= @lorem_m
-  %p
-    Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-    = succeed "." do
-      %a{:href => "#"} Morbi et risus
-    Aliquam nisl. Nulla facilisi. 
-    Cras accumsan vestibulum ante. Vestibulum sed tortor. Praesent
-    %span.caps SMALL CAPS #{@lorem*2}
+  = partial :big_text_2p
 %hr.clear/
 .span-7.border.colborder.category-1
   %h3 Category 1
-  = partial "partials/list".to_sym
+  = partial :list
 .span-8.border.colborder.category-2
   %h3 Category 2
-  = partial "partials/list".to_sym
+  = partial :list
 .span-7.last.category-3
   %h3 Category 3
-  = partial "partials/list".to_sym
+  = partial :list
 %br.clear/
 .span-24.footer
   - for i in (1..4) 
